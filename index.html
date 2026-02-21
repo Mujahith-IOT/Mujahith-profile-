@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Developer</title>
+<title>M. Mohammed Mujahith | AI & Embedded Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -16,55 +16,199 @@
 }
 
 body{
-    background:#0f0f0f;
-    color:white;
-    overflow-x:hidden;
+    background:#0f172a;
+    color:#f1f5f9;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
 }
 
 header{
-    position:fixed;
-    width:100%;
-    padding:20px 10%;
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
-    z-index:1000;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
-header h1{
-    color:#00f7ff;
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,0.4);
 }
 
-nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:white;
+.header-text h1{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.header-text h2{
+    font-size:1.2rem;
+    font-weight:400;
+    color:#38bdf8;
+    margin-top:5px;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.section h3{
+    font-size:1.8rem;
+    margin-bottom:20px;
+    border-left:5px solid #38bdf8;
+    padding-left:15px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#1e293b;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:20px;
     transition:0.3s;
 }
 
-nav a:hover{
-    color:#00f7ff;
+.skills span:hover{
+    background:#38bdf8;
+    color:#0f172a;
 }
 
-section{
-    padding:120px 10%;
-    min-height:100vh;
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    transition:0.3s;
 }
 
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.project-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
-.hero h2{
-    font-size:48px;
+.contact p{
+    margin:8px 0;
 }
 
-.highlight{
-    color:#00f7ff;
+a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    margin-top:60px;
+    padding:20px 0;
+    font-size:0.9rem;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <div class="header-text">
+        <h1>M. Mohammed Mujahith</h1>
+        <h2>AI & Data Science | Embedded System Developer</h2>
+    </div>
+</header>
+
+<div class="section">
+    <h3>About Me</h3>
+    <p>
+        Passionate AI and Embedded Systems developer focused on building intelligent hardware-software integrated systems.
+        Currently studying Artificial Intelligence and Data Science. Strong interest in electronics innovation,
+        custom device design, satellite communication systems, and real-time embedded development.
+    </p>
+</div>
+
+<div class="section">
+    <h3>Skills</h3>
+    <div class="skills">
+        <span>Embedded Systems Development</span>
+        <span>ESP32 Programming</span>
+        <span>Raspberry Pi</span>
+        <span>Electronics Design</span>
+        <span>Hardware Tools & Prototyping</span>
+        <span>AI System Integration</span>
+        <span>Python</span>
+        <span>Linux</span>
+        <span>IoT Communication Systems</span>
+    </div>
+</div>
+
+<div class="section">
+    <h3>Projects</h3>
+
+    <div class="project-card">
+        <h4>Orvix AI Assistant</h4>
+        <p>Designing and developing a futuristic AI assistant integrating voice control, hardware interface,
+        ESP32 communication, and intelligent system control architecture.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>Satellite Ground Server Prototype</h4>
+        <p>Planning and building a cylindrical ground server system capable of integrating satellite
+        communication and WiFi-based IP communication using ESP32.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>Custom Communication Device</h4>
+        <p>Developing a long-range radio communication gadget without SIM dependency,
+        focusing on embedded electronics and hardware optimization.</p>
+    </div>
+
+    <div class="project-card">
+        <h4>Custom LED Matrix Display System</h4>
+        <p>Designing a 40x32 SMD LED matrix display using custom driver ICs and microcontroller control
+        for compact AI-based devices.</p>
+    </div>
+
+</div>
+
+<div class="section">
+    <h3>Education</h3>
+    <p>Completed 10th, 11th, and 12th Standard.</p>
+    <p>Currently Studying Artificial Intelligence & Data Science.</p>
+</div>
+
+<div class="section contact">
+    <h3>Contact</h3>
+    <p>Phone: +91 7598134898</p>
+    <p>Email: <a href="mailto:mujahith2815@gmail.com">mujahith2815@gmail.com</a></p>
+    <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/mohammed-mujahith-m-87ba90303" target="_blank">
+        linkedin.com/in/mohammed-mujahith-m-87ba90303</a>
+    </p>
+</div>
+
+<footer>
+    © 2026 M. Mohammed Mujahith | AI & Embedded Systems Developer
+</footer>
+
+</div>
+
+</body>
+</html>    color:#00f7ff;
 }
 
 .btn{
